@@ -1,0 +1,146 @@
+[
+    {
+        "id": 101,
+        "title": "Morning Vibes",
+        "description": "Enjoying my morning coffee while coding!",
+        "media": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#coffee",
+            "#coding"
+        ],
+        "createdAt": "2025-08-20T09:30:00Z"
+    },
+    {
+        "id": 102,
+        "title": "My New Project",
+        "description": "Just deployed my first Next.js app 🚀",
+        "media": "https://www.youtube.com/watch?v=43KpwU2tQzM&list=RD43KpwU2tQzM&start_radio=1",
+        "mediaType": "video",
+        "tags": [
+            "#nextjs",
+            "#webdev"
+        ],
+        "createdAt": "2025-08-22T15:10:00Z"
+    },
+    {
+        "id": 103,
+        "title": "Evening Walk",
+        "description": "Sunset walks hit differently 🌅",
+        "media": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#sunset",
+            "#relax"
+        ],
+        "createdAt": "2025-08-23T18:45:00Z"
+    },
+    {
+        "id": 104,
+        "title": "Coding Marathon",
+        "description": "Pulled an all-nighter to finish this project 💻☕",
+        "media": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#hustle",
+            "#developerlife"
+        ],
+        "createdAt": "2025-08-24T04:10:00Z"
+    },
+    {
+        "id": 105,
+        "title": "Workout Mode",
+        "description": "Staying healthy even during deadlines 💪",
+        "media": "https://images.unsplash.com/photo-1571019613914-85f342c8a22e?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#fitness",
+            "#balance"
+        ],
+        "createdAt": "2025-08-25T06:00:00Z"
+    },
+    {
+        "id": 106,
+        "title": "Weekend Trip",
+        "description": "Short getaway to the mountains 🏔️",
+        "media": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#travel",
+            "#nature"
+        ],
+        "createdAt": "2025-08-26T11:20:00Z"
+    },
+    {
+        "id": 107,
+        "title": "Cooking Time",
+        "description": "Tried a new pasta recipe 🍝",
+        "media": "https://images.unsplash.com/photo-1525755662778-989d0524087e?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#foodie",
+            "#homechef"
+        ],
+        "createdAt": "2025-08-26T20:00:00Z"
+    },
+    {
+        "id": 108,
+        "title": "Late Night Debugging",
+        "description": "Why do bugs only appear at 2 AM? 🐛",
+        "media": "https://imgs.search.brave.com/pObFLK4TuPdT9s97uQ9Crusw2XsHGgmlsiOS8N0bFHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA1/NTA1NjYxMi9waG90/by9jb2RpbmctbGF0/ZS1pbnRvLXRoZS1u/aWdodC5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9MFlTck03/NmhnNF85Q2l2a0V3/aEhPa3lKWldNaVYt/NGdKak9mS2VFNHFV/cz0",
+        "mediaType": "image",
+        "tags": [
+            "#bugfixing",
+            "#devlife"
+        ],
+        "createdAt": "2025-08-27T02:30:00Z"
+    },
+    {
+        "id": 109,
+        "title": "Beach Day",
+        "description": "Relaxing by the sea 🌊",
+        "media": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#beachvibes",
+            "#relaxation"
+        ],
+        "createdAt": "2025-08-27T16:40:00Z"
+    },
+    {
+        "id": 110,
+        "title": "Gaming Night",
+        "description": "Multiplayer madness with friends 🎮",
+        "media": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+        "mediaType": "video",
+        "tags": [
+            "#gaming",
+            "#fun"
+        ],
+        "createdAt": "2025-08-28T21:00:00Z"
+    },
+    {
+        "id": 111,
+        "title": "Morning Jog",
+        "description": "Running through the park to start the day 🏃‍♂️",
+        "media": "https://images.unsplash.com/photo-1526401485004-2fda9f6d2a1d?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#jogging",
+            "#morningroutine"
+        ],
+        "createdAt": "2025-08-29T06:15:00Z"
+    },
+    {
+        "id": 112,
+        "title": "Book Time",
+        "description": "Reading my favorite sci-fi novel 📚",
+        "media": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500",
+        "mediaType": "image",
+        "tags": [
+            "#reading",
+            "#chill"
+        ],
+        "createdAt": "2025-08-29T19:30:00Z"
+    }
+]
