@@ -8,8 +8,8 @@ export async function GET() {
     try {
         // Fetch all posts and populate the 'user' field
         const posts = await Post.find()
-            .sort({ createdAt: -1 }) // newest first
-            .populate("user", "name username avatar bio email"); // pick fields you want
+            .sort({ createdAt: -1 }) 
+            .populate("user", "name username avatar bio email");
 
         // Send posts with populated user info
         return NextResponse.json(posts);

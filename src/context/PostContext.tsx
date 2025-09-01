@@ -1,10 +1,22 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode, useEffect } from "react";
-import {IPost} from "@/model/Post"
 import { useAuth } from "./AuthContext";
 
 
+
+export interface Post {
+    _id: string,
+    title: string;
+    description?: string;
+    mediaUrl?: string;
+    user: {
+        name: string,
+        username: string
+    }
+    createdAt: Date;
+    updatedAt: Date;
+}
 
 interface CreatePostData {
     title: string;
@@ -15,13 +27,13 @@ interface CreatePostData {
 }
 
 type PostContextType = {
-    allPosts: IPost[];
-    postsByUser: IPost[];
-    setAllPosts: (posts: IPost[]) => void;
-    setPostsByUser: (posts: IPost[]) => void;
-    getPosts: () => Promise<IPost[]>;
-    getPostsByUser: (userId: string) => Promise<IPost[]>;
-    createPost: (postData: CreatePostData) => Promise<IPost>;
+    allPosts: Post[];
+    postsByUser: Post[];
+    setAllPosts: (posts: Post[]) => void;
+    setPostsByUser: (posts: Post[]) => void;
+    getPosts: () => Promise<Post[]>;
+    getPostsByUser: (userId: string) => Promise<Post[]>;
+    createPost: (postData: CreatePostData) => Promise<Post>;
     loading: boolean;
     setLoading: (loading: boolean) => void;
 };
@@ -30,12 +42,12 @@ const PostContext = createContext<PostContextType | undefined>(undefined);
 
 
 export function PostProvider({ children }: { children: ReactNode }) {
-    const [allPosts, setAllPosts] = useState<IPost[]>([]);
-    const [postsByUser, setPostsByUser] = useState<IPost[]>([]);
+    const [allPosts, setAllPosts] = useState<Post[]>([]);
+    const [postsByUser, setPostsByUser] = useState<Post[]>([]);
     const [loading, setLoading] = useState(false);
     const { user } = useAuth();
 
-    const getPosts = async (): Promise<IPost[]> => {
+    const getPosts = async (): Promise<Post[]> => {
         try {
             setLoading(true);
             const response = await fetch('/api/post');
@@ -51,7 +63,7 @@ export function PostProvider({ children }: { children: ReactNode }) {
         }
     };
 
-    const getPostsByUser = async (userId: string): Promise<IPost[]> => {
+    const getPostsByUser = async (userId: string): Promise<Post[]> => {
         try {
             setLoading(true);
             const response = await fetch(`/api/post/user/${userId}`);
@@ -75,7 +87,7 @@ export function PostProvider({ children }: { children: ReactNode }) {
     }, [user]);
 
 
-    const createPost = async (postData: CreatePostData): Promise<IPost> => {
+    const createPost = async (postData: CreatePostData): Promise<Post> => {
         try {
             setLoading(true);
             const response = await fetch('/api/post', {
